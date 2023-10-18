@@ -1,0 +1,4 @@
+.about-scroll {
+    animation: rotate 1s linear infinite;
+    animation-delay: calc(var(--scroll) * -1s);
+}
