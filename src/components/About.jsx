@@ -6,7 +6,6 @@ import { services } from "../utils/constants"; // the main data for what to we p
 import { fadeIn, textVariant } from "../utils/motion";
 import { SectionWrapper } from "../hoc";
 
-
 export const ServiceCard = ({ index, title, icon }) => {
   return (
     <Tilt className="xs:w=[250px] w-full ">
@@ -25,7 +24,9 @@ export const ServiceCard = ({ index, title, icon }) => {
           flex flex-col justify-center items-center"
         >
           <img src={icon} alt={title} className="w-16 h-16 object-contain" />
-          <h3 className="text-white text-[20px] font-bold text-center">{title}</h3>
+          <h3 className="text-white text-[20px] font-bold text-center">
+            {title}
+          </h3>
         </div>
       </motion.div>
     </Tilt>
@@ -44,19 +45,25 @@ const About = () => {
         variant={fadeIn("", "", 0.1, 1)}
         className="mt-4 text-secondary text-[17px] max-w-3xl leading=[30px]"
       >
-        Hi, I am a highly motivated self-taught FullStack web developer with
-        focus on frontend, my experience is in
-        Html5,Css3,Bootstrap,Javascript,React.js, Redux toolkit, Firebase, Git,
-        and a bit of node and express aswell, I learned how to program through
-        research and practice. My enthusiasm towards making an impact in this
-        era of advancments, fuled me towards my self-learning. I have been
-        practicing it since 2022. Throughout my learning I've created projects
-        and I will be creating more and more projects as I keep on learning
-        more, My Goal is to help buisenesses, Tech companies and all sorts of
-        companies in the digital world and help them stomp a solid impact on the
-        globe
+        Born in Kuwait, I spent my early years captivated by the world of
+        computer science, inspired by the brilliance of hackers and coders. In
+        2017, my family relocated to Pakistan due to financial challenges.
+        Despite limited opportunities, my passion for coding propelled me to
+        self-teach web development, in 2022 i started to code, mastering various
+        technologies through relentless dedication. Today, I am a full-stack
+        MERN developer, eager to embark on my professional journey.
       </motion.p>
-
+      <motion.div variants={textVariant()}>
+        <h2 className={styles.sectionHeadText}>Vision.</h2>
+        <motion.p
+          variant={fadeIn("", "", 0.1, 1)}
+          className="mt-4 text-secondary text-[17px] max-w-3xl leading=[30px]"
+        >
+          ‘I envision an IT industry that leverages technology to drive positive
+          change, enhance connectivity, and solve real-world problems through
+          innovation and inclusivity’.
+        </motion.p>
+      </motion.div>
       <div className="mt-20 ml-5 mr-5 grid grid-cols-2 gap-10">
         {services.map((service, index) => (
           <ServiceCard key={service.title} index={index} {...service} />
@@ -67,8 +74,3 @@ const About = () => {
 };
 
 export default SectionWrapper(About, "about");
-
-
-
-
-

@@ -21,14 +21,19 @@ export { default as redux } from "./tech/redux.png";
 export { default as tailwind } from "./tech/tailwind.png";
 export { default as bootstrap } from "./tech/Bootstrap.svg";
 export { default as threejs } from "./tech/threejs.svg";
+export { default as mongodb } from "./tech/mongodb.png";
+
 
 export { default as eShop } from "./company/eShop.png";
 export { default as quizlogo } from "./company/quizlogo.png";
 export { default as gamelogo } from "./company/gamelogo.png";
 export { default as iCoderlogo } from "./company/iCoderlogo.png";
+export { default as social } from "./company/social.jpg"
 
 export { default as eShopPic } from "./eShopPic.png";
 export { default as tenzies } from "./tenzies.png";
 export { default as quizApp } from "./quiz-app.png";
+export { default as socialapp } from "./socialapp.png";
+
 
 

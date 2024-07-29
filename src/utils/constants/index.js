@@ -21,6 +21,9 @@ import {
     threejs,
     bootstrap,
     eShopPic,
+    social,
+    mongodb,
+    socialapp
   } from "./../../assets/";
   
   export const navLinks = [
@@ -48,7 +51,7 @@ import {
       icon: mobile,
     },
     {
-      title: "Firebase auth + DB",
+      title: "Express.js auth + MongoDB",
       icon: backend,
     },
     {
@@ -95,6 +98,10 @@ import {
       icon: firebase,
     },
     {
+      name: "mongodb",
+      icon: mongodb,
+    },
+    {
       name: "Three JS",
       icon: threejs,
     },
@@ -102,6 +109,7 @@ import {
       name: "git",
       icon: git,
     },
+    
 
   ];
   
@@ -155,8 +163,22 @@ import {
         "It is a real life example of e-commerce web application, that includes all sorts of things, Builded using HTML, CSS3, Bootstrap, JavaScript, React.js, Redux toolkit, Firebase, Node.js, express.js",
         "A user can purchase an item, go to cart, click on checkout, enter it's shipping details and go to stripe payment checkout for checkout",
         "The Products are stored in Firebase database and Storage aswell, User authentication, login, register is all done by Firebase auth",
-        "It includes an admin panel that is accessed only by a specific user(admin user), it can add products to it's tore, check monthly sales total products taht have been shipped or are remaining etc, can also edit or delete products from the store, can observe orders and can cahnge their status.",
+        "It includes an admin panel that is accessed only by a specific user(admin user), it can add products to it's store, check monthly sales total products taht have been shipped or are remaining etc, can also edit or delete products from the store, can observe orders and can cahnge their status.",
         "The user can contact the store's owner by sending them the email from contact us page"
+      ],
+    },
+    {
+      title: "MERN app with realtime chat app using socket.io",
+      company_name: "MERN NetFriends social media application",
+      icon: social,
+      iconBg: "#E6DEDD",
+      date: "Feb 2024 - July 2024",
+      points: [
+        "It is a real life example of scoial media web application, that includes all sorts of things, Builded using HTML, CSS3, Bootstrap, TailwindCSS JavaScript, React.js, React Redux, MongoDB, Node.js, Express.js, socket.io",
+        "A logged in user can post a picture, go to its profile, edit profile details inlcuding profile pic and cover pic, can also chat with friends in a separate chat app",
+        "The posts, users, chats, messages are stored in MongoDB database, User authentication, login, register is all done by Express auth",
+        "It includes a separate chat app made by socket.io to implmement realtime functionality.",
+        "The user can follow other users to see their post, can like thier posts etc."
       ],
     },
   ];
@@ -251,6 +273,27 @@ import {
       ],
       image: quizApp,
       source_code_link: "https://github.com/Cable-nerd/Quizzical_App",
+    },
+    {
+      name: "NetFriends app",
+      description:
+        "responsive Fullstack MERN social media app with realtime chat app that uses MERN to handle everylogic, it also has react redux for global state management",
+      tags: [
+        {
+          name: "React.js",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "Node.js, Express.js",
+          color: "green-text-gradient",
+        },
+        {
+          name: "MongoDB",
+          color: "green-text-gradient",
+        },
+      ],
+      image: socialapp,
+      source_code_link: "https://github.com/Cable-nerd/NetFriends",
     },
   ];
   
